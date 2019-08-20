@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Line } from 'react-chartjs-2';
 
-import classes from './Line.css';
+import classes from '../Chart.css';
 
 const line = (props) => {
   let data = {}, options = {};
@@ -55,7 +55,7 @@ const line = (props) => {
     }
   }
     return (
-        <div className={classes.LineWrap}>
+        <div className={classes.ChartWrap}>
             <Line data={data} options={options}/>
         </div>
     )

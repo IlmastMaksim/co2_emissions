@@ -3,7 +3,7 @@ import React from 'react';
 
 import { Doughnut } from 'react-chartjs-2';
 
-import classes from './Doughnut.css';
+import classes from '../Chart.css';
 
 const doughnut = (props) => {
   let data = {}, options = {};
@@ -33,10 +33,10 @@ const doughnut = (props) => {
         }
     }
 
-  let lineDivClasses;
-  props.show === false ? lineDivClasses=classes.DoughnutWrap.concat(" ", classes.Hidden) : lineDivClasses=classes.DoughnutWrap;
+  let styling;
+  props.show === false ? styling=classes.ChartWrap.concat(" ", classes.Hidden) : styling=classes.ChartWrap;
   return (
-      <div className={lineDivClasses}>
+      <div className={styling}>
           <Doughnut data={data} options={options}/>
       </div>
   )

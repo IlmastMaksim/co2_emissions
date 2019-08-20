@@ -1,6 +1,6 @@
 import React from "react";
 
-import classes from './Pareto.css';
+import classes from '../Chart.css';
 
 import { HorizontalBar } from 'react-chartjs-2';
 
@@ -36,7 +36,7 @@ const pareto = (props) => {
     }
     
     return (
-        <div className={classes.BarWrap}>
+        <div className={classes.ChartWrap}>
             <HorizontalBar
             data={data}
             options={options} />

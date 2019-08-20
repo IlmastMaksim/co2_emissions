@@ -88,10 +88,10 @@ class Rating extends Component {
 
         let flub = this.state.flub ? <ErrorMessage show={this.state.flub}>Data not found or request is incorrect</ErrorMessage> : null;
 
-        let component = <div className={classes.CountryRationgWrap}>
-                            <div className={classes.CountryRationgFormWrap}>
+        let component = <div className={classes.RatingWrap}>
+                            <div className={classes.RatingFormWrap}>
                                 {flub}
-                                <h1 className={classes.CountryRatingFormTitle}>Pollution rating list</h1>
+                                <h1 className={classes.RatingFormTitle}>Pollution rating list</h1>
                                 <Form 
                                     handleSubmitForm={this.handleSubmitForm} 
                                     subheader="Please, enter the amount of locations and countdown year.">
@@ -117,7 +117,7 @@ class Rating extends Component {
         }
 
         return (
-            <section className={classes.CountryRatingWrap}>
+            <section className={classes.RatingWrap}>
                 {component}
             </section>
         )

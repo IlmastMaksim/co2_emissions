@@ -7,6 +7,10 @@ export const updateObject = (oldObject, updatedProperties) => {
     };
 };
 
+export const fillArray = (start, end) => {
+    return Array(end - start + 1).fill().map((_, i) => start + i)
+}
+
 export const duplicate = (element) => JSON.parse(JSON.stringify(element));
 
 export const extractSpecProps = (data, prop) => {

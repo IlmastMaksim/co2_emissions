@@ -2,6 +2,8 @@ import React from 'react';
 
 import Option from '../Option/Option';
 
+import { fillArray } from '../../../shared/util';
+
 import classes from './Select.css';
 
 const select = (props) => {
@@ -13,10 +15,6 @@ const select = (props) => {
 
     const sYear = 1950;
     const eYear = new Date().getFullYear();
-
-    const fillArray = (start, end) => {
-        return Array(end - start + 1).fill().map((_, i) => start + i)
-    }
 
     const years = fillArray(sYear, eYear)
                     .map((el, i) => 
@@ -39,8 +37,9 @@ const select = (props) => {
             element = <select 
                         defaultValue={props.amount ? props.amount : amountPlaceholder}
                         onChange={props.handleInputs}
-                        className={classes.AmountSelect}
-                        name="amount">
+                        className={classes.Select}
+                        name="amount"
+                        style={{marginBottom: "1.2em"}}>
                             <option disabled defaultValue>{amountPlaceholder}</option>
                             {amounts}
                     </select>
@@ -50,7 +49,7 @@ const select = (props) => {
             element = <select 
                         defaultValue={props.years ? props.years : yearsPlaceholder}
                         onChange={props.handleInputs}
-                        className={classes.DateFormSelect}
+                        className={classes.Select}
                         name="years">
                             <option disabled defaultValue>{yearsPlaceholder}</option>
                             {years}
@@ -61,8 +60,9 @@ const select = (props) => {
             element = <select 
                         defaultValue={props.location ? props.location : locationPlaceholder} 
                         onChange={props.handleInputs} 
-                        className={classes.CountrySelect}
-                        name="location">
+                        className={classes.Select}
+                        name="location"
+                        style={{marginBottom: "1em"}}>>
                             <option disabled defaultValue>{locationPlaceholder}</option>
                             {locations}
                     </select>;

@@ -1,12 +1,14 @@
-.BarWrap {
+.ChartWrap {
     width: 100%;
-    margin-left:auto;
-    margin-right:auto; 
     padding: 9em 0;
 }
 
 @media (max-width: 600px) {
-    .BarWrap {
+    .ChartWrap {
         padding: 11em 0;
     }
+}
+
+.Hidden {
+    display: none;
 }
