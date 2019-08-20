@@ -1,0 +1,16 @@
+.Button {
+    margin-top: 1.5em;
+    border: none;
+    background: #ffffff;
+    color: #8a97a0;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.Button:hover, .Button:focus, .Button:active {
+    background: transparent;
+    color: white;
+}

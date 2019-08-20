@@ -1,0 +1,31 @@
+.ChangesWrap {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 800px;
+    height: 100%;
+    display: flex;
+}
+
+.ChangesFormWrap {
+    background: #00b4ff;
+    max-width: 400px;
+    margin: 9em auto;
+    border: 2px solid #fff;
+    padding: 5em;
+    text-align: center;
+    min-height: 390px;
+    max-height: 500px;
+}
+
+.ChangesFormTitle {
+    color: white;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+@media (max-width: 500px) {
+    .ChangesFormWrap {
+        min-height: 480px;
+        padding: 5em 2em;
+    }
+}

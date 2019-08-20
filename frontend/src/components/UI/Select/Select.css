@@ -1,0 +1,40 @@
+.AmountSelect {
+    appearance: none;
+    height: 40px;
+    padding: 0.25em;
+    border: none;
+    background: #fff;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #8a97a0;
+    margin-bottom: 1.2em
+  }
+  
+  .DateFormSelect {
+    appearance: none;
+    height: 40px;
+    padding: 0.25em;
+    border: none;
+    background: #fff;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #8a97a0;
+  }
+  
+  .CountrySelect {
+    margin-bottom: 1em;
+    width: 100%;
+    appearance: none;
+    height: 40px;
+    padding: 0.25em;
+    border: none;
+    background: #fff;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #8a97a0;
+  }
+  
+  .CountrySelect ~ .CountrySelect {
+    margin-left: 1em;
+  }
+    

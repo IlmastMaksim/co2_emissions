@@ -1,0 +1,46 @@
+.CountryRatingWrap {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    min-height: 800px;
+    height: 100%;
+    display: flex;
+}
+
+.CountryRationgWrap {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 800px;
+    height: 100%;
+    display: flex;
+}
+
+.CountryRationgFormWrap {
+    background: #00b4ff;
+    max-width: 400px;
+    margin: 9em auto;
+    border: 2px solid #fff;
+    padding: 5em;
+    min-height: 390px;
+    max-height: 500px;
+    text-align: center;
+}
+
+.CountryRatingFormTitle {
+    color: white;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+.Hidden {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .CountryRationgFormWrap {
+        min-height: 480px;
+        padding: 5em 2em;
+    }
+}
+
+

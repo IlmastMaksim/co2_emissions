@@ -1,0 +1,14 @@
+.LineWrap {
+    width: 100%;
+    padding: 9em 0;
+}
+
+@media (max-width: 600px) {
+    .LineWrap {
+        padding: 11em 0;
+    }
+}
+
+.Hidden {
+    display: none;
+}
